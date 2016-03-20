@@ -13,6 +13,7 @@
 		CB6CCC6C1C50318B001C4065 /* TipCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB6CCC6A1C50318B001C4065 /* TipCalculator.xcdatamodeld */; };
 		CB6CCC6E1C50318B001C4065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6CCC6D1C50318B001C4065 /* Assets.xcassets */; };
 		CB6CCC711C50318B001C4065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6CCC6F1C50318B001C4065 /* LaunchScreen.storyboard */; };
+		CB6CCC791C5031EE001C4065 /* TipCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CCC781C5031EE001C4065 /* TipCalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CB6CCC6D1C50318B001C4065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6CCC701C50318B001C4065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB6CCC721C50318C001C4065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6CCC781C5031EE001C4065 /* TipCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		CB6CCC571C50318B001C4065 = {
 			isa = PBXGroup;
 			children = (
+				CB6CCC781C5031EE001C4065 /* TipCalculatorModel.swift */,
 				CB6CCC621C50318B001C4065 /* TipCalculator */,
 				CB6CCC611C50318B001C4065 /* Products */,
 			);
@@ -142,6 +145,7 @@
 				CB6CCC6C1C50318B001C4065 /* TipCalculator.xcdatamodeld in Sources */,
 				CB6CCC661C50318B001C4065 /* ViewController.swift in Sources */,
 				CB6CCC641C50318B001C4065 /* AppDelegate.swift in Sources */,
+				CB6CCC791C5031EE001C4065 /* TipCalculatorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +256,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rach.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rach.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -289,6 +301,7 @@
 				CB6CCC771C50318C001C4065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
